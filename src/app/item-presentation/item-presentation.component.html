@@ -1,0 +1,59 @@
+<div class="col s12 m4" *ngFor="let item of presentation">
+  <div class="col s12 item-presentacion reset-padding card valign-wrapper grey darken-4 white-text">
+    <div class="valign card-content center">
+      <h4>{{ item.title }} </h4>
+      <br />
+      <div class="divider col s8 offset-s2 m4 offset-m4 l2 offset-l5"></div>
+      <br />
+      <p>
+        {{ item.text }}
+      </p>
+      <br />
+      <a *ngIf="item.link == 'experiencia' " [routerLink]="[{outlets:{experiencia:['experiencia']}}]" class="btn waves-effect grey darken-3">{{ item.txtlink }}</a>
+      <a *ngIf="item.link == 'conoceme' " [routerLink]="[{outlets:{conoceme:['conoceme']}}]" class="btn waves-effect grey darken-3">{{ item.txtlink }}</a>
+      <a *ngIf="item.link == 'estudios' " [routerLink]="[{outlets:{estudios:['estudios']}}]" class="btn waves-effect grey darken-3">{{ item.txtlink }}</a>      
+      <!--[{outlets:{item.link:['item.link']}}]-->
+      <!-- [{outlets: { {{ item.link }}:[ {{ item.link }} ] } }]-->
+    </div>
+  </div>
+  
+</div>
+
+<router-outlet name="experiencia"></router-outlet>
+<router-outlet name="conoceme"></router-outlet>
+<router-outlet name="estudios"></router-outlet>
+
+<!--
+<div class="col s12 m4">
+  <div class="col s12 item-presentacion reset-padding card valign-wrapper grey darken-4 white-text">
+    <div class="valign card-content center">
+      <h4>QUIÉN SOY</h4>
+      <br />
+      <div class="divider col s8 offset-s2 m4 offset-m4 l2 offset-l5"></div>
+      <br />
+      <p>
+        Descubre un poco mas de mi mundo, mis hobbys, conocimientos y expectativas que tengo
+        con proyección a mi desarrollo personal.
+      </p>
+      <br />
+      <a href="" class="btn waves-effect grey darken-3">CONOCER MÁS</a>
+    </div>
+  </div>
+</div>
+<div class="col s12 m4">
+  <div class="col s12 item-presentacion reset-padding card valign-wrapper grey darken-4 white-text">
+    <div class="valign card-content center">
+      <h4>ESTUDIOS</h4>
+      <br />
+      <div class="divider col s8 offset-s2 m4 offset-m4 l2 offset-l5"></div>
+      <br />
+      <p>
+        Saber aprobechar cada oportunidad de conocimiento por parte de grandes canales que
+        atraves de youtube o desde sus propios sitios web illustran y son generadores de ideas.
+      </p>
+      <br />
+      <a href="" class="btn waves-effect grey darken-3">VER ESTUDIOS</a>
+    </div>
+  </div>
+</div>
+-->

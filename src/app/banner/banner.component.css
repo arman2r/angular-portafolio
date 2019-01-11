@@ -1,0 +1,100 @@
+.banner-home{
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.banner-home{
+    animation: animateImgBanner 10s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+}
+
+.carru-txt{
+    min-width: 250px;    
+    max-height: 33px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;    
+    margin:5px 0 -5px 0
+}
+
+.carru-txt b{
+    display: block;
+    margin-top:-2px !important;
+    margin-bottom: 10px !important;
+    animation: upTitles 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite 
+}
+
+@keyframes upTitles{
+    0%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    10%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    20% {
+        transform: translateY(-40px);
+        opacity: 1;
+    }
+    30%{
+        transform: translateY(-40px);
+        opacity: 1;
+    }
+    40%{
+        transform: translateY(-40px);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(-80px);
+        opacity: 1;
+    }
+    60%{
+        transform: translateY(-80px);
+        opacity: 1;
+    }
+    75%{
+        transform: translateY(-120px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateY(120px);
+        opacity: 0;
+    }
+    82%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.carru-txt b:nth-child(2){
+    margin: 0 -230px 0 -230px
+}
+
+.img-profile{
+    width: 150px;
+    display: inline-block;
+}
+
+.img-profile span{
+    width: 90%;
+    height: 150px !important;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transform: skewX(-15deg) !important;
+}
+
+.img-profile span img{
+    transform: skewX(15deg) !important;
+    width: 200px !important;
+    margin-left: -30px 
+}

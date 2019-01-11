@@ -1,0 +1,108 @@
+/* You can add global styles to this file, and also import other style files */
+.row{
+    margin:0 0 !important
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+    margin:0 0 !important
+}
+
+h1{
+    font-size: 2.5em !important
+}
+
+h2{
+    font-size: 2em !important
+}
+
+.valign{
+    width: 100%
+}
+
+.reset-shadow{
+    box-shadow: none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none
+}
+
+.reset-padding{
+    padding: 0 0 !important
+}
+
+.smallvspaces{
+    padding:20px 0 !important
+}
+
+.mediumvspaces{
+    padding:40px 0 !important
+}
+
+.largevspaces{
+    padding:80px 0 !important
+}
+
+.smallhspaces{
+    padding:20px 20px !important
+}
+
+.mediumhspaces{
+    padding:40px 40px !important
+}
+
+.largehspaces{
+    padding:80px 40px !important
+}
+
+.temelight,
+.temelight a,
+.temelight p,
+.temelight b,
+.temelight article,
+.temelight span,
+.temelight h1,
+.temelight h2,
+.temelight h3,
+.temelight h4,
+.temelight h5{
+    color: #f5f5f5 !important
+}
+
+.temelight,
+.temelight div{
+    background-color: #333 !important
+}
+
+.bgtransparent{
+    background-color: transparent !important
+}
+
+.divider{
+    height: 3px !important;
+    border-radius: 3px !important;
+}
+
+.btn{
+    border-radius: 40px !important
+}
+
+@media (min-width:993px){
+    .container{
+        width: 90% !important;         
+        max-width: 1366px !important;
+    }
+}
+
+@media (min-width: 601px) {
+    nav,
+    nav .nav-wrapper i,
+    nav a.sidenav-trigger,
+    nav a.sidenav-trigger i {
+        height: 80px !important;
+        line-height: 80px !important;
+    }
+}
